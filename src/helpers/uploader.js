@@ -3,7 +3,7 @@
 const multer = require('multer');
 
 // dirname para subir una jerarquia mas
-const { dirname } = require('node:path')
+const { dirname } = require('path')
 
 const storage = multer.diskStorage({
     // Destino para guardar el archivo, request, archivo y callback
