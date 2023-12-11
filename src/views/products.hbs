@@ -1,0 +1,23 @@
+<div>
+    <h1>Hola
+        {{name}}
+        Bienvenidos a products
+    </h1>
+
+    {{#if isAdmin}}
+        {{#each products}}
+            <div>
+                <p> Nombre del producto {{this.title}} </p>   
+                <p> Precio del producto {{this.price}} </p>  
+                <p> Stock del producto {{this.stock}} </p>  
+                <p> Desc del producto {{this.description}} </p>
+                <hr>
+                </p>
+            </div>
+        {{/each}} 
+    {{else}}
+        <h2> El usuario no es admin. </h2>
+    {{/if}}
+</div>
+
+<script src="/js/products.js" ></script>
